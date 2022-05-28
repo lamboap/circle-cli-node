@@ -24,8 +24,7 @@ jobs:
           name: Install npm dependencies
           command: |
             sudo npm install -g
-      - snyk/scan:
-          fail-on-issues: false
+      - snyk/scan
 workflows:
   build_test:
     jobs:
